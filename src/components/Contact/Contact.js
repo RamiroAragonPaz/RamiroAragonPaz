@@ -22,7 +22,9 @@ const Contact = () => {
         .then(
             ()=>{
                 Swal.fire(
-                    {   text: 'Thanks for get in touch!',
+                    {   
+                        background: '#090909',
+                        text: 'Thanks for get in touch!',
                         icon: 'success',
                         iconColor: "orange",
                         confirmButtonColor: 'orange'
