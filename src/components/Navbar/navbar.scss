@@ -1,0 +1,311 @@
+.nav-bar {
+    background: #090909;
+    height: 75px;
+    width: 100vw;
+    position: relative;
+    z-index: 100;
+
+    .nav, .responsiveNav {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 10%;
+
+            .logo {
+                text-decoration: none;
+                display: block;
+                height: 100%;
+                justify-content: center;
+
+                img {
+                    filter: invert(49%) sepia(16%) saturate(5814%) hue-rotate(360deg) brightness(101%) contrast(106%);
+                    display: block;
+                    margin: 0 auto;
+                    width: 54px;
+                }
+
+                .subtitle{
+                    margin: 0 auto ;
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+
+            a {
+                align-self: center;
+                font-size: 22px;
+                color: #4d4d4e;
+                text-decoration: none;
+
+                i {
+                    transition: all 0.3s ease-out;
+                }
+
+                &:hover {
+                    color: #ff7300;
+                    
+                    svg {
+                        opacity: 0;
+                    }
+
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                &:after {
+                    content: '';
+                    font-size: 15px;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    opacity: 0;
+                    transition: all 0.3s ease-out;
+                    margin-top: -25px;
+                    font-weight: 600;
+                }
+
+                &:first-child {
+                    &::after {
+                        content: 'HOME';    
+                    }
+                }
+            }
+
+            a.about-link {
+                &::after {
+                    content: "ABOUT"
+                }
+            }
+
+            a.contact-link {
+                &::after {
+                    content: "CONTACT"
+                }
+            }
+
+            a.portfolio-link {
+                &::after {
+                    content: "PORTFOLIO"
+                }
+            }
+
+            a.skills-link {
+                &::after {
+                    content: "SKILLS"
+                }
+            }
+
+            a.active { 
+                
+                svg {
+                    color: #ff7300;
+                }
+            }
+
+        }
+    }
+
+    .list {
+        width: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        align-items: center;
+
+        .list-element {  
+            .element-a {
+                display: flex;
+                font-size: 22px;
+                width: 20px;
+                color: #4d4d4e;
+                text-decoration: none;
+                
+                &:visited svg {
+                    color: #4d4d4e;
+                }
+
+                &:hover svg {
+                    color: #ff7300;
+                }
+            }
+        }
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px){
+    .nav-bar {
+        .responsiveNav {
+            height: fit-content;
+            width: 100%;
+            background-color: #090909;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-content: center;
+        
+            .logo-container {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                width: 20%;
+
+                .logo {
+                    text-decoration: none;
+                    display: block;
+                    height: 100%;
+                    justify-content: center;
+
+                    img {
+                        filter: invert(49%) sepia(16%) saturate(5814%) hue-rotate(360deg) brightness(101%) contrast(106%);
+                        display: block;
+                        margin: 0 auto;
+                        width: 54px;
+                    }
+
+                    .subtitle{
+                        text-align: center;
+                        margin: 0 auto ;
+                        color: white;
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .nav-links {
+                position: relative;
+                display: flex;
+                width: 50vw;
+                height: 50vh;
+                flex-direction: column;
+                animation: fadeInDown 0.51s backwards;
+    
+                a {
+                    animation: fadeInDown 1s backwards;
+                    align-self: center;
+                    font-size: 20px;
+                    
+                    text-decoration: none;
+                    content: 'HOME'; 
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 0;
+                    font-weight: 600;
+                    
+                    svg {
+                        opacity: 0;
+                    }
+
+                    &:after {
+                        opacity: 1;
+                        color: #ff7300;
+                    }
+                }
+    
+                a.about-link {
+                    &::after {
+                        content: "ABOUT"
+                    }
+                }
+    
+                a.contact-link {
+                    &::after {
+                        content: "CONTACT"
+                    }
+                }
+    
+                a.portfolio-link {
+                    &::after {
+                        content: "PORTFOLIO"
+                    }
+                }
+    
+                a.skills-link {
+                    &::after {
+                        content: "SKILLS"
+                    }
+                }
+    
+                a.active { 
+                    color: #ff7300;
+                    text-decoration: underline;
+                }
+            }
+
+            .list {
+                display: none;
+            }
+    
+
+            .nav-buttons {
+                display: flex;
+                align-items: center;
+                
+                width: 20%;
+                height: 11vh;
+                justify-content: center;
+                
+                .nav-open {
+                    display: none;
+                }
+                .nav-close{
+                    border: none;
+                    background-color: transparent;
+                    color: #ff7300;
+                }
+            }
+        }
+
+        .nav {
+            .logo-container{
+                width: 20%;
+            }
+            .nav-links, .list{
+                display: none;
+            }
+            
+            .nav-buttons {
+                display: flex;
+                width: 20%;
+                justify-content: center;
+                align-items: center;
+
+                .nav-open {
+                    width: 10vw;
+                    border: none;
+                    background-color: transparent;
+                    color: #ff7300;
+                }
+                .nav-close{
+                    border: none;
+                    background-color: transparent;
+                    display: none;
+                }
+            }
+        }
+    }
+}

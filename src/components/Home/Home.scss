@@ -1,0 +1,146 @@
+@import 'animate.css';
+
+.home-page {
+    justify-content: start!important;
+    
+
+    .home-text-zone {
+        
+        min-height: 75vh;
+        width: 90%;
+    }   
+
+    .home-text {
+        
+        width: 90%;
+        animation: fadeIn 1s 1.5s backwards;
+        color: white;
+        font-size: 53px;
+        margin: 10vh 0 05vh;
+        font: 'Coolvetica';
+        font-weight: 400;
+
+        .letter-r {
+            display: inline-block;
+            margin: 0 0 0 10px;
+            color: #ff7300;
+        }
+
+
+        &::before {
+            content: '< >';
+            color: #ff7300;
+            animation: fadeIn 1s 1s backwards;
+        }
+
+
+        &::after {
+            content: ' < / >';
+            color: #ff7300;
+            animation: fadeIn 1s 1s backwards;
+        }
+
+           
+        .down-slash {
+            display: inline;
+            animation: flash 2s infinite;
+        }
+
+    }
+
+    .buttons-container{
+        display: flex;
+        flex-direction: row;
+        width: 35%;
+        justify-content: space-between;
+        
+        .home-flat-button {
+            height: 4vh;
+            color: #ff7300;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            font-family: sans-serif;
+            text-decoration: none;
+            align-self: center;
+            padding: 0px 10px 12px;
+            border: 1px solid #ff7300;
+            animation: fadeIn 1s 2.5s backwards;
+            
+            .down-slash {
+                display: inline-block;
+                animation: flash 2s infinite;
+            }
+
+            &:hover {
+                background-color: #ff7300;
+                color: black;
+                transition: all 0.2s ease-in-out;   
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 1024px){
+    .home-page .home-text-zone {
+        min-height: 50vh;
+        margin: 5vh 0;
+        
+        .home-text {
+            width: 90%;
+            animation: fadeIn 1s 1.5s backwards;
+            color: white;
+            font-size: 33px;
+            margin: 0 0 05vh;
+            font: 'Coolvetica';
+            font-weight: 400;
+
+            .letter-r {
+                display: inline-block;
+                margin: 0 0 0 10px;
+                color: #ff7300;
+            }
+
+
+            &::before {
+                content: '< >';
+                display: block;
+                color: #ff7300;
+                animation: fadeIn 1s 1s backwards;
+            }
+
+
+            &::after {
+                content: ' < / >';
+                display: block;
+                color: #ff7300;
+                animation: fadeIn 1s 1s backwards;
+            }
+        }
+
+        .buttons-container{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            
+            
+            .home-flat-button {
+                height: 5vh;
+                width: 70%;
+                margin: 0 20% 10% 0;
+                color: #ff7300;
+                font-size: 12px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                
+                
+                .down-slash {
+                    display: inline-block;
+                    animation: flash 2s infinite;
+                }
+            }
+        }
+}
+}

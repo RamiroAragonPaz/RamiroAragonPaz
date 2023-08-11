@@ -1,0 +1,159 @@
+.contact-page {
+    position: relative;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+
+    .text-zone {
+        margin: 10vh 0;
+        width: 50%;
+        max-height: 90%;
+
+        h1 {
+            animation: fadeIn 1s 1s backwards;
+            color: white;
+            font-size: 53px;
+            margin: 0;
+            font: 'Coolvetica';
+            
+            .letter-r {
+                display: inline-block;
+                margin: 0 0 0 10px;
+                color: #ff7300;
+            }
+        }
+
+        .text-container{
+            display: flex;
+        
+            .text {
+                font-style: 13px;
+                font-size: 17px;
+                color: white;
+                font-family: sans-serif;
+                font-weight: 300px;
+                min-height: fit-content;
+                animation: fadeIn 1s 2s backwards;
+            }
+        }
+    }
+
+    .form-container{
+        max-height: 100%;
+        margin: 12vh 0;
+        width: 50vw;    
+        animation: fadeIn 1s 3s backwards;     
+        
+        .contact-form{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+
+            input[type='text'],
+            input[type='email'] {
+                display: block;
+                width: 100%;
+                border: #ff7300 1px solid;
+                background: transparent;
+                height: 50px;
+                font-size: 16px;
+                color: #fff;
+                padding: 0 20px;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+
+
+                &:focus{
+                    transition: 0.05s;
+                    border: #4d4d4e 1px solid;
+                    outline: none;
+                    
+                }
+        
+
+            }
+
+            textarea {
+                margin-bottom: 15px;
+                width: 100%;
+                border: #ff7300 1px solid;
+                background: transparent;
+                height: 50px;
+                font-size: 16px;
+                color: #fff;
+                padding: 20px;
+                box-sizing: border-box;
+                min-height: 150px;
+
+                &:focus{
+                    border: #ff7300 3px solid;
+                    outline: none;
+                }
+        
+            } 
+
+            .flat-button {
+                color: #ff7300;
+                background-color: transparent;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 4px;
+                font-family: sans-serif;
+                text-decoration: none;
+                border: 1px solid #ff7300;
+                animation: fadeIn 1s 2s backwards;
+                
+                .down-slash {
+                    display: inline-block;
+                    animation: flash 2s infinite;
+                }
+        
+                &:hover {
+                    background-color: #ff7300;
+                    color: black;
+                    transition: all 0.2s ease-in-out;   
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-page {
+        flex-wrap: wrap;
+        justify-content: start;
+        min-height: 130vh;
+        .text-zone {
+            margin: 5vh 0;
+            width: 90%;
+
+            h1 {
+                font-size: 43px;
+            }
+
+            .text-container {
+                .text {
+                    font-size: 20px;
+                    margin-left: 1vw;
+                }
+            }
+        }  
+        
+        .form-container{
+            max-height: 100%;
+            margin: 0;
+            width: 100%;    
+            animation: fadeIn 1s 3s backwards;     
+            
+            .contact-form{
+                width: 100%;
+            }
+        }
+    }
+}

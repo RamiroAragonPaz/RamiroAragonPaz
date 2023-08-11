@@ -1,0 +1,56 @@
+[
+    {
+        "image": "./portfolio/Skills/solidity.svg",
+        "name": "SOLIDITY",
+        "category": "Web 3"       
+    },
+    {
+        "image": "./portfolio/Skills/hardhat.svg",
+        "name": "HARDHAT",
+        "category": "Web 3"       
+    },
+    {
+        "image": "./portfolio/Skills/ethers.svg",
+        "name": "ETHERS.js",
+        "category": "Web 3"       
+    },
+    {
+        "image": "./portfolio/Skills/metamask.png",
+        "name": "METAMASK",
+        "category": "Web 3"       
+    },
+    {
+        "image": "./portfolio/Skills/ipfs.png",
+        "name": "IPFS",
+        "category": "web3"       
+    },
+    {
+        "image": "./portfolio/Skills/react.png",
+        "name": "REACT",
+        "category": "Web 2"       
+    },
+    {
+        "image": "./portfolio/Skills/firebase.png",
+        "name": "FIREBASE",
+        "category": "Web 2"       
+    },
+    {
+        "image": "./portfolio/Skills/sass.png",
+        "name": "SASS",
+        "category": "Web 2"       
+    },
+    {
+        "image": "./portfolio/Skills/javascript.png",
+        "name": "JAVASCRIPT",
+        "category": "Web 2"       
+    },{
+        "image": "./portfolio/Skills/html.png",
+        "name": "HTML",
+        "category": "Web 2"       
+    },
+    {
+        "image": "./portfolio/Skills/css.png",
+        "name": "CSS",
+        "category": "Web 2"       
+    }
+]

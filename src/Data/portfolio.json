@@ -1,0 +1,35 @@
+[
+    {
+        "cover": "ramazon.jpeg",
+        "title": "Ramazon",
+        "description": "This is a Web3 version of Amazon. Technologies used: Solidity - Hardhat - Ethers.js - React.js - Metamask",
+        "url": "https://ramiroaragonpaz.github.io/ramazon/"
+    },
+    {
+        "cover": "./portfolio/1/ticketar.jpeg",
+        "title": "TicketAr",
+        "description": "A place where you can buy your NFT tickets for shows.  Technologies used: Solidity - Hardhat - Ethers.js - React.js - Metamask",
+        "url": "https://ramiroaragonpaz.github.io/TicketAr/"
+    },
+    {
+        "cover": "./portfolio/1/randompoke.png",
+        "title": "Random Pokemon Game",
+        "description": "Game using Pokemon API. Technologies used: React.js",
+        "url": "https://random-poke-app.vercel.app/"
+    },
+    {
+        "cover": "./portfolio/1/reactEcomerce.png",
+        "title": "Ecommerce page",
+        "description": "A full e-commerce page for buying nutritional plans. Technologies used: React.js - Firebase",
+        "url": "https://maruvalaniaecommerce.vercel.app/"
+    },
+    {
+        "cover": "./portfolio/1/maruvalania.png",
+        "title": "Professional Page",
+        "description": "This is a Professional page.  Technologies used: HTML - SASS - Javascript",
+        "url": "https://maruvalanianutricion.vercel.app/"
+    }
+]
+
+
+
