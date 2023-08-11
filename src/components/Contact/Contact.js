@@ -2,7 +2,10 @@ import './Contact.scss'
 import Loader from 'react-loaders'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
+const MySwal = withReactContent(Swal)
 
 const Contact = () => {
 
@@ -18,14 +21,22 @@ const Contact = () => {
         )
         .then(
             ()=>{
-                alert('Message successfully sent!');
-                window.location.reload(false);
+                Swal.fire(
+                    {   text: 'Thanks for get in touch!',
+                        icon: 'success',
+                        iconColor: "orange",
+                        confirmButtonColor: 'orange'
+                    },
+                    refForm.current.reset()
+                );
+                
             },
             (erorr)=>{
                 alert('Failed to send the message, please try again');
                 console.log(erorr)
             }
-        )
+        );
+        
     }
 
     return (
